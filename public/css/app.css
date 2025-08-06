@@ -1,0 +1,132 @@
+
+
+.navbar {
+    background-color: #2b8deb;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.card {
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #2b8deb;
+}
+
+.card p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.btn-logout {
+    background-color: #ff4c4c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-logout:hover {
+    background-color: #e62e2e;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
+/* Efek hover untuk tombol */
+.btn:hover {
+    background-color: #0056b3;  /* Ubah warna sesuai dengan tema */
+    border-color: #0056b3;
+    color: white; /* Mengubah teks menjadi putih saat hover */
+}
+
+/* Efek hover untuk tombol Info submenu */
+.btn-info:hover {
+    background-color: #004085;
+    border-color: #004085;
+    color: white;
+}
+
+/* Efek hover untuk tombol */
+.btn-light:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Tombol Logout */
+.btn-outline-danger:hover {
+    background-color: #f8d7da;
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.submenu {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.submenu a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.submenu a:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+}
+
+.btn-info {
+    background-color: #17a2b8;
+}
+/* Mengubah warna border tabel */
+.table-bordered.border-colored {
+    border: 2px solid #007bff; /* Ubah warna sesuai dengan preferensi Anda */
+  }
+  
+  .table-bordered.border-colored th,
+  .table-bordered.border-colored td {
+    border: 1px solid #007bff; /* Ubah warna border untuk sel */
+  }
+  
+

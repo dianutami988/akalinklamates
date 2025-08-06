@@ -1,0 +1,234 @@
+body {
+    font-size: 0.875rem;
+    /* background-image: url('http://127.0.0.1:8000/fotouser/14.jpg');
+    background-size: 100%;  */
+}
+
+h1 {
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h6 {
+    color: #000303;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+p {
+    color: black;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+    vertical-align: text-bottom;
+}
+
+/*
+   * Sidebar
+   */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    /* rtl:raw:
+    right: 0;
+    */
+    bottom: 0;
+    /* rtl:remove */
+    left: 0;
+    z-index: 100;
+    /* Behind the navbar */
+    padding: 48px 0 0;
+    /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        top: 5rem;
+    }
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #000000;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* warna icon */
+.sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: black;
+}
+
+.sidebar .nav-link.active {
+    color: #f2f2f2;
+}
+
+/*  warna icon ketika diklk atau dikunjungi */
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar-heading {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+/*
+   * Navbar
+   */
+
+.navbar-brand {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.25);
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.navbar .navbar-toggler {
+    top: 0.25rem;
+    right: 1rem;
+}
+
+.navbar .form-control {
+    padding: 0.75rem 1rem;
+    border-width: 0;
+    border-radius: 0;
+}
+
+.form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+.cetak {
+    float: right;
+    border-radius: 50%;
+}
+
+.notification {
+    background: red;
+    color: white;
+    padding: 5px;
+}
+
+.fa {
+    color: white;
+}
+
+.fa-exclamation-triangle {
+    color: red;
+}
+
+/* DROPDOWN TES */
+nav ul {
+    padding: 0 0px;
+    list-style: none;
+    position: relative;
+    width: 100%;
+    font-family: ‘helvetica’, arial;
+}
+
+nav ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: #fff;
+}
+
+nav ul ul {
+    display: none;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    max-width: 300px;
+    width: auto;
+}
+
+nav ul ul li {
+    float: none;
+    border-bottom: 0px solid rgb(0, 0, 0, 0.2);
+    position: relative;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    position: relative;
+}
+
+nav ul ul li a {
+    padding: 10px 5px;
+    color: black;
+}
+
+nav ul ul li a:hover {
+    background: black;
+}
+
+nav ul ul ul {
+    position: absolute;
+    left: 10%;
+    top: 0;
+    width: 200px;
+}
+
+nav ul ul ul li {
+    position: relative;
+}
+
+.list {
+    margin-left: 20px;
+}
+
+.listdua {
+    margin-left: 10px;
+}
+
+.listketiga {
+    margin-left: 10px;
+}
+
+.img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
